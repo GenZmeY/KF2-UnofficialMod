@@ -71,7 +71,7 @@ function get_zedternal ()
 	if [[ -d "$ZedternalDir" ]]; then
 		pushd "$MutSource/ZedTernalReborn" && git pull && popd
 	else
-		git clone "$ZedternalGit" "$ZedternalDir"
+		git submodule add "$ZedternalGit" "$ZedternalDir"
 	fi
 }
 
@@ -125,6 +125,7 @@ function brew_unpublished ()
 	if ! compiled; then
 		compile
 	fi
+	rm -f "$MutStructScript/ZedTernalReborn.u"
 	cp -rf "$MutUnpublish" "$MutPublish"
 }
 
