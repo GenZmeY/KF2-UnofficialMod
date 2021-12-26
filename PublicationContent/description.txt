@@ -1,0 +1,84 @@
+[i][b](Warning: This mutator de-ranks your game, i.e. you cannot gain XP.)[/b][/i]
+
+[h1]About[/h1]
+Unofficial Mod is a collection of ideas that improve on core vanilla gameplay. Consider this mod an extension of (instead of an addition to) vanilla KF2.
+
+[i][b](VERY IMPORTANT NOTE: When updating to v9, you'll need to clear the Unofficial Mod cache in the folders mentioned by the below discussion before you restart your server or client.)[/b][/i]
+
+[h1]Added in v9[/h1]*No longer uses custom Trader archetypes when replacing default Trader archetype
+*Dropped weapon pickup info improvements:
+**Now shows weapon name
+**No longer shows weapon owner in solo offline
+*Config option to show Medic weapon dart charge on bottom right (next to ammo)
+*Config option to disable initial settings display (and console command to display settings in console)
+*Fixed HRG Incision crash
+
+[h1]Some Current Features[/h1]
+*Config options to disable weapon upgrades and random map objectives (e.g. Stand Your Ground)
+*[b]M14 EBR[/b]: Alt-fire toggles laser sight (along with config option to disable laser sight by default)
+*[b]Pulverizer[/b]: Single-shot, re-chamber is the reload, Reload key toggles explosive hit on heavy attack
+*[b]C4[/b]: Alt-fire switches to special Targeted mode allowing you to detonate a specific planted C4
+*[b]M16/M203[/b]: Config option to enable manual M203 reload with alt-fire (along with HUD icon to indicate that the M203 needs to be reloaded)
+*HUD improvements for Medic weapon lock-on, regen health, dropped weapons, etc.
+*Improvements to kick vote system (shows who initiated the vote and a config option for maximum failed kick vote attempts)
+
+[i](NOTE: If you want to see the full feature list and version info, see [url=https://docs.google.com/spreadsheets/d/1ufMtGY1Nzr_JRimbweQygQvxu91ftItE1PZf53CmQbs/edit?usp=sharing]this spreadsheet[/url][/i]
+
+[h1]For Solo[/h1]
+To test the mod, open the console (~ or F3) and type:
+
+open KF-BurningParis?Mutator=UnofficialMod.UnofficialModMut
+
+Unofficial Mod will indicate that it is loaded via displaying its settings in the lobby chat box.
+
+[h1]For Servers[/h1]
+Note that in order to play with this mod online, the server in question must be subscribed. If you have a server, you can set this up with the instructions [url=http://wiki.tripwireinteractive.com/index.php]here[/url].
+
+Add the following to your command line (this mod is also ServerActors compatible):
+
+?Mutator=UnofficialMod.UnofficialModMut
+
+[h1]The INI[/h1]
+Unofficial Mod will generate KFUnofficialMod.ini if it doesn't exist. Alternately, you can download the INI file [url=https://www.dropbox.com/s/2hkta64i1t1g9o6/KFUnofficialMod.ini]here[/url]. Place this file in your <Drive>:\Users\<Username>\Documents\My Games\KillingFloor2\KFGame\Config folder.
+
+[b]Very important[/b]: The config settings in UnofficialModMut are for servers/solo play. The config settings in UMClientConfig are per-client configs, and modifying them on the dedicated server will have no effect.
+
+[h1]Weapon Upgrades[/h1]
+There are three config settings governing weapon upgrades:
+*bDisableWeaponUpgrades outright disables weapon upgrades. Note that if this is true, modifying the other two values will have no effect.
+*DefaultWeaponUpgradeLevel is the default weapon upgrade level if upgrades are enabled, used for weapons without overrides.
+*WeaponUpgradeOverrides is a list of weapon-specific overrides, one per line.
+
+The relevant values for the two latter config settings are:
+*0 disables upgrades
+*A positive number enables UP TO that many upgrades (e.g. 2 allows only up to 2 upgrades)
+*A negative number enables ALL BUT that many upgrades (e.g. -1 disables upgrade to Tier 5)
+
+For the WeaponUpgradeOverrides setting, you can use the UMMakeWeaponUpgradesConfig console command to create KFUnofficialModExtra.ini (or use the one provided [url=https://www.dropbox.com/s/fo2kjdspk7d0wx1/KFUnofficialModExtra.ini]here[/url]), then search it for your desired weapon, copy-paste the WeaponUpgradeOverrides variable, and modify as desired.
+
+[b]Notes:[/b] You only need either the single or dual weapon definition for dual-wieldable weapons as Unofficial Mod accounts for both weapons. Also, the UMMakeWeaponUpgradesConfig console command will put in localized weapon names and uses the game session's current Trader list, so it can be used after KF2 updates and with mods using custom weapons (even if Unofficial Mod cannot override or modify the Trader list).
+
+[h1]Console Commands[/h1]
+See the below discussion for console commands.
+
+[h1]Compatibility[/h1]
+[b]General[/b]: Any mod that overrides the Flash GUI menus (e.g. the Trader menu) will make the weapon upgrade disable feature not work, and also introduce a couple of Trader GUI ammo bugs with the C4 and M16/M203 that Unofficial Mod's override fixes. Zedternal is an exception to this.
+
+[b]Other weapon mods[/b]: Download [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1131663339]Trader Inventory Mutator[/url] and follow the instructions therein.
+
+Notes:
+*You do not need to add Unofficial Mod's weapons to TIM's configuration as Unofficial Mod uses a unique Trader list injection system to override vanilla KF2 weapons if TIM is running.
+*Keep UnofficialMod.UnofficialModMut in the command line or ServerActors. This ensures that all mod features work properly.
+
+[b]Zedternal[/b]: All known issues Unofficial Mod had with Zedternal are fixed as of v3. Let me know if there are any other issues.
+
+[h1]Known issues[/h1]
+Sometimes the localization file will not download. v7.2 implements a workaround for the Trader menu, but other localization will be broken. Subscribing to Unofficial Mod should fix this.
+
+[h1]Sources[/h1]
+You can download sources [url=https://github.com/ZeUsernameGoesHere/UnofficialMod]here[/url].
+
+[h1]Future Features[/h1]
+*More config settings to lessen Trader nags (as requested)
+
+Feel free to suggest any ideas that extend on core KF2 gameplay. I just might implement them.
