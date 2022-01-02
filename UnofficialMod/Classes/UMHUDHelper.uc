@@ -871,7 +871,7 @@ defaultproperties
 	MaxWeaponPickupDist=700 // 7m
 	WeaponPickupScanRadius=75 // 75cm
 	ZedScanRadius=200 // 2m
-	WeaponAmmoIcon=Texture2D'UI_Menus.TraderMenu_SWF_I10B'
+	WeaponAmmoIcon=Texture2D'UI_Menus.TraderMenu_SWF_I130'
 	WeaponWeightIcon=Texture2D'UI_Menus.TraderMenu_SWF_I26'
 	WeaponIconSize=16
 	WeaponFontScale=1.25
