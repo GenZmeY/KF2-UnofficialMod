@@ -1,0 +1,70 @@
+[KFWeap_Shotgun_Nailgun_UM]
+ItemName="VLAD-1000 Nailgun [UM]"
+ItemCategory="Shotgun"
+ItemDescription="•Choice of single or multiple nail fire modes.\n•Alt-fire to toggle between fire modes.\n•[UM] Now with 48 nails per magazine."
+
+[KFWeap_Blunt_Pulverizer_UM]
+ItemName="Pulverizer [UM]"
+ItemCategory="Melee"
+ItemDescription="•Primary - fast blunt attack, Hold Primary for combo attack.\n•Secondary fires an explosive round on contact as well.\n•[UM] Now single-shot. Faster re-chamber is the reload. Reload toggles explosive on heavy attack."
+
+[KFWeap_Thrown_C4_UM]
+ItemName="C4 Explosives [UM]"
+ItemCategory="Explosives"
+ItemDescription="•Fire mode places your C4 charge.\n•[UM] Alt-fire switches to special Targeted mode allowing you to detonate a specific planted C4."
+
+[KFWeap_Rifle_M14EBR_UM]
+ItemName="M14 EBR [UM]"
+ItemCategory="Sniper Rifle"
+ItemDescription="•Fire mode is single shot only.\n•Equipped with a laser sight.\n•[UM] Alt-fire toggles the laser sight."
+
+[KFWeap_AssaultRifle_M16M203_UM]
+ItemName="M16 M203 Assault Rifle [UM]"
+ItemCategory="Assault Rifle"
+ItemDescription="•Firemode is full-auto only.\n•Alt-fire to fire grenades.\n•[UM] If manual reload is enabled, alt-fire also reloads the M203."
+SecondaryAmmo="M203 Grenade"
+
+[KFWeap_GrenadeLauncher_HX25_UM]
+ItemName="HX25 Grenade Pistol [UM]"
+ItemCategory="Explosives"
+ItemDescription="•Fire mode shoots multiple submunitions that explode on contact.\n•[UM] Alt-fire fires the grenade as one explosive."
+
+[KFWeap_AssaultRifle_MedicRifleGrenadeLauncher_UM]
+ItemName="HMTech-501 Grenade Rifle [UM]"
+ItemCategory="Assault Rifle"
+ItemDescription="•Fire mode is full-auto only.\n•Alt-fire to fire medic grenades.\n•[UM] If manual reload is enabled, alt-fire also reloads the grenade launcher."
+SecondaryAmmo="Medic Grenade"
+
+[UMLocalMessage]
+StartedKickVoteString="has started a vote to kick"
+TooManyFailedKickVotesString="You have attempted and failed too many kick votes"
+KickedForTooManyAttemptsString="has been kicked for attempting and failing too many kick votes"
+TraderTimeExtendedString="Trader time has been extended because a new player has joined the game"
+
+[UMSystemMessage]
+DisabledSettingString="DISABLED"
+EnabledSettingString="ENABLED"
+NextSessionString="next session"
+ModNameString="<Unofficial Mod>"
+
+WeaponUpgradesString="Weapon upgrades will be"
+Tier1WeaponsString="Start without Tier 1 weapons will be"
+KF1SyringeString="KF1-style Syringe will be"
+RandomMapObjString="Random map objectives will be"
+FailedKickVotesString="Max failed kick votes changed to"
+KickFailedVoteInitString="Kick failed vote initiator changed to"
+PerkKnifeSpeedBoostString="Perk knife speed boost is now"
+PerkKnifeSlowerPlayersString="ENABLED for slower players"
+PerkKnifeAllPlayersString="ENABLED for all players"
+MidGameJoinerTraderTimeString="Mid-game joiner Trader time is now up to %x% seconds"
+DefaultUpgradeLevelString="Default upgrade level will be"
+AddUpgradeOverrideString="Upgrade override for %x% will be"
+RemoveUpgradeOverrideString="Upgrade override for %x% will be removed"
+NoUpgradeOverrideString="No upgrade override found for"
+GameplayWeaponString="Gameplay-affecting weapon %x% will be"
+DisableOthersWeaponsPickupString="Picking up others' weapons is now"
+PlayerPickedUpOthersWeaponString="picked up"
+
+[UnofficialModMut]
+FriendlyName="Unofficial Mod"
+Description="Unofficial Mod adds a variety of gameplay and QoL features to Killing Floor 2. Some features:|*Config options to limit or disable weapon upgrades|*M16-M203/HM-501: config options for full manual reload and shows icon in HUD when launcher needs reloading|*M14 EBR: toggle laser sight with alt-fire|*C4: switch to Targeted mode with alt-fire to detonate a specific planted C4|*Config options for custom health, armor, and supplier colors|*Show regen health, Medic weapon lock-on, wave info when in the menus, and dropped pickup info|*Kick vote and Trader improvements|*And more!"
